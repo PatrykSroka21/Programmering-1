@@ -1,5 +1,12 @@
-let name = "Patryk"
-let age = "18"
+let name = "Vladimir"
+let age = 35
 
-console.log(name)
-console.log(age)
+if(name == "Bajs"){
+    console.log("Etta")
+}
+else if(age != 25){
+    console.log("Tvåa")
+}
+else{
+    console.log("Skit ner dig!")
+}
