@@ -5,7 +5,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question('Guess the random generate number between 1 - 10  ', (answer) => {
+rl.question('Guess the random generated number between 1 - 10  ', (answer) => {
 
 
     rl.close();
@@ -17,5 +17,5 @@ if (answer == Nmb) {
     console.log("You win!!!")
 }
 else if (answer != Nmb){
-    console.log("You fucking dumb!! Try harder!!")
+    console.log("You dumb!! Try harder!!")
 }
