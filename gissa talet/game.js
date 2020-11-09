@@ -5,17 +5,21 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question('Guess the random generated number between 1 - 10  ', (answer) => {
+console.log("Guess a number between 1-10")
 
+let Nmb = Math.floor(Math.random() * 10) + 1; 
 
+rl.line(guess) => {
+    const answer = guess
+    Number = guess
     rl.close();
-});
+};
 
-let Nmb = Math.floor(Math.random() * 25) + 1; 
 
-if (answer == Nmb) {
+
+if (guess == Nmb) {
     console.log("You win!!!")
 }
-else if (answer != Nmb){
-    console.log("You dumb!! Try harder!!")
+else if (guess != Nmb){
+    console.log("You dumb!!")
 }
