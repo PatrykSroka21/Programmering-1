@@ -17,7 +17,7 @@ const rl = readline.createInterface({
 });
 
 rl.question(' ', (answer) => {
-  // TODO: Log the answer in a database
+
   console.log(`Your difficulty is set to: ${answer}`);
 
   rl.close();
