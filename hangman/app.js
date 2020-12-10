@@ -1,16 +1,48 @@
-//Get words to guess in a array for 3 different difficulties 
+//Get words to guess in a array for 3 different difficulties getting 3 different variables for easy, medium, hard.
+
+var easy = []
+var medium = []
+var hard = []
 
 //Welcome message || let the user choose diffiluty
 
+console.log("Welcome to the game of hangman")
+console.log("Chose between difficulties by typing 1 for easy, 2 for medium and 3 for hard") 
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question(' ', (answer) => {
+  // TODO: Log the answer in a database
+  console.log(`Your difficulty is set to: ${answer}`);
+
+  rl.close();
+});
+
 //If statement for chosing a different difficulty
+if (answer == 1) {
+    var easyWord = items[Math.floor(Math.random() * easy.length)];
+}
+else if (answer == 2) {
+    var mediumWord = items[Math.floor(Math.random() * medium.length)];
+}
+else if (answer == 3) {
+    var hardWord = items[Math.floor(Math.random() * hard.length)];
+}
+else{
+    console.log("put in a number between 1-3")
+}
+//Get a random word from chosen difficulty array by using "Math.Floor() + arrayLength"
 
-//Get a random word from chosen difficulty array 
+//Split the word with "split" and tell the length of a word (console.log)
 
-//Split the word and tell the length of a word
-
-//Let the user choose if he is guessing the whole word or a single letter
+//Let the user choose if he is guessing the whole word or a single letter "if statement"
  
-//For loop for tries
+//For loop for tries (no need for extra variables)
 
 //If statement for right/wrong guess on the letter
  
@@ -21,4 +53,5 @@
 //Ask the user to play again
 
 //If statement for playing again or closing the application 
+
 
