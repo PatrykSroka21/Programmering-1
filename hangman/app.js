@@ -9,6 +9,7 @@ var hard = []
 console.log("Welcome to the game of hangman")
 console.log("Chose between difficulties by typing 1 for easy, 2 for medium and 3 for hard") 
 
+const { exit } = require('process')
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -43,13 +44,19 @@ else{
 //Let the user choose if he is guessing the whole word or a single letter "if statement"
  
 //For loop for tries (no need for extra variables)
-
+for (let tries = 3; tries < 0; tries--) {
+  console.log(tries + "tries left" )
+  
+}
 //If statement for right/wrong guess on the letter
  
 //If statement for right/wrong guess on the word
 
 //If statement for if tries = 0 to end the game
+if (tries = 0) {
+  console.log("Want to play again? Press 1 to play again or 2 to exit")
 
+}
 //Ask the user to play again
 
 //If statement for playing again or closing the application 
