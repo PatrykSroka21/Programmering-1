@@ -1,8 +1,8 @@
 //Get words to guess in a array for 3 different difficulties getting 3 different variables for easy, medium, hard.
 
-var easy = []
-var medium = []
-var hard = []
+var easy = ["word", "sword", "cat"]
+var medium = ["computer", "phone", "adroid"]
+var hard = ["complication" , "programming" , "calculating"]
 
 //Welcome message || let the user choose diffiluty
 
@@ -25,6 +25,7 @@ rl.question(' ', (answer) => {
 });
 
 //If statement for chosing a different difficulty
+//Get a random word from chosen difficulty array by using "Math.Floor() + arrayLength so we can than split the word as it stays an array and it makes easier to do a statement for guesses"
 if (answer == 1) {
     var easyWord = items[Math.floor(Math.random() * easy.length)];
 }
@@ -37,9 +38,9 @@ else if (answer == 3) {
 else{
     console.log("put in a number between 1-3")
 }
-//Get a random word from chosen difficulty array by using "Math.Floor() + arrayLength"
 
-//Split the word with "split" and tell the length of a word (console.log)
+
+//Split the word with "split" so it is an array which makes it easier with to make a guess on a single letter as every letter will be a single element and tell the length of a word (console.log)
 
 //Let the user choose if he is guessing the whole word or a single letter "if statement"
  
@@ -57,8 +58,8 @@ if (tries = 0) {
   console.log("Want to play again? Press 1 to play again or 2 to exit")
 
 }
-//Ask the user to play again
+//Ask the user to play again (if statement), easiest way to restart the process 
 
-//If statement for playing again or closing the application 
+//If statement for playing again or closing the application (end app with exit function)
 
 
